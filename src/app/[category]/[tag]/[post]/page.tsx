@@ -6,6 +6,6 @@ type pageProps = {
 
 const page:React.FC<pageProps> = () => {
     
-    return <div>/tag/id</div>
+    return <div>/category/tag/post</div>
 }
 export default page;
