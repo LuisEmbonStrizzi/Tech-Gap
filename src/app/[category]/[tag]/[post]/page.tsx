@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import RootLayout from "@/components/layout/layout";
+import Aside from "@/components/Aside/Aside";
 
-type pageProps = {
-    
+type pageProps = {};
+
+const page: React.FC<pageProps> = () => {
+  return (
+    <RootLayout isUserEntering={false}>
+      <Aside />
+    </RootLayout>
+  );
 };
-
-const page:React.FC<pageProps> = () => {
-    
-    return <div>/category/tag/post</div>
-}
 export default page;

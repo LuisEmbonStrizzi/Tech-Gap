@@ -6,11 +6,10 @@ import Settings from "./Settings";
 type NavbarProps = {};
 
 const Navbar: React.FC<NavbarProps> = () => {
+  //Instanciamos un nuevo objeto de la clase Date
+  const date = new Date();
 
-  //Instanciamos un nuevo objeto de la clase Date  
-  const date = new Date(); 
-
-  //Aca establecemos el formato de la  fecha en cuestion 
+  //Aca establecemos el formato de la  fecha en cuestion
   const options: Intl.DateTimeFormatOptions = {
     day: "2-digit",
     month: "2-digit",
@@ -24,7 +23,7 @@ const Navbar: React.FC<NavbarProps> = () => {
   );
 
   //Aca usamos expresiones regulares para reemplazar todos los '/' por '.', sin el 'g' (global), solo lo haría la primera vez que se topase con la '/'.
-  const formattedDateString = dateString.replace(/\//g, '.');
+  const formattedDateString = dateString.replace(/\//g, ".");
 
   return (
     <>
@@ -36,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         </div>
         <NavButtons />
       </header>
-      <Settings />
+      {/* <Settings /> */}
     </>
   );
 };
