@@ -1,11 +1,11 @@
 import React from 'react';
 
 type AlertProps = {
-    
+    label:string;
 };
 
-const Alert:React.FC<AlertProps> = () => {
+const Alert:React.FC<AlertProps> = ({ label }) => {
     
-    return <div>Alert</div>
+    return <div>{label}</div>
 }
 export default Alert;

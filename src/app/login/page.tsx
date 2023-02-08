@@ -1,11 +1,13 @@
-import React from 'react';
+import RootLayout from "@/components/layout/layout";
+import React from "react";
 
-type pageProps = {
-    
+type pageProps = {};
+
+const page: React.FC<pageProps> = () => {
+  return (
+    <RootLayout isUserEntering={true}>
+      <div>/login</div>
+    </RootLayout>
+  );
 };
-
-const page:React.FC<pageProps> = () => {
-    
-    return <div>/login</div>
-}
 export default page;
