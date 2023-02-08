@@ -1,11 +1,14 @@
-import React from 'react';
+import RootLayout from "@/components/layout/layout";
+import Input from "@/components/global/Input";
 
-type pageProps = {
-    
+type pageProps = {};
+
+const page: React.FC<pageProps> = () => {
+  return (
+    <RootLayout isUserEntering={true}>
+      <div>/Home</div>
+      <Input placeholder="Enter your email" />
+    </RootLayout>
+  );
 };
-
-const page:React.FC<pageProps> = () => {
-    
-    return <div>/signup</div>
-}
 export default page;
