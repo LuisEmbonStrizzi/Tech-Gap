@@ -20,9 +20,11 @@ const RootLayout: React.FC<RootLayoutProps> = ({
       <body className="font-satoshi bg-Background-Default">
         {isUserEntering ? (
           <>
-            <div>
-              <Logo />
-              <Settings />
+            <div className="fixed top-[32px] left-[32px]">
+              <div className="flex flex-col gap-[30px] ">
+                <Logo />
+                <Settings />
+              </div>
             </div>
             {children}
             <Footer />

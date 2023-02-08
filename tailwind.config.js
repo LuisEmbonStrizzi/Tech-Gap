@@ -23,15 +23,16 @@ module.exports = {
       Share: "#A73BFC",
       Danger: "#FF3232",
     },
-    directions: { // defaults to these values
-      't': 'to top',
-      'tr': 'to top right',
-      'r': 'to right',
-      'br': 'to bottom right',
-      'b': 'to bottom',
-      'bl': 'to bottom left',
-      'l': 'to left',
-      'tl': 'to top left',
+    directions: {
+      // defaults to these values
+      t: "to top",
+      tr: "to top right",
+      r: "to right",
+      br: "to bottom right",
+      b: "to bottom",
+      bl: "to bottom left",
+      l: "to left",
+      tl: "to top left",
     },
     fontFamily: {
       satoshi: ["Satoshi", "sans-serif"],
