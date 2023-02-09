@@ -1,3 +1,4 @@
+'use client';
 import "../../styles/Fonts/WEB/css/globals.css";
 import Head from "./head";
 import Navbar from "./navbar/Navbar";

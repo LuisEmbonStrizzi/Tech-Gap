@@ -3,13 +3,15 @@ import Input from "../global/Input";
 import GoogleBtn from "./GoogleBtn";
 import CtaButton from "../global/CtaButton";
 import Divider from "./Divider";
+import Link from "next/link";
 
 type FormProps = {
   text: string;
   link: string;
+  url: string;
 };
 
-const Form: React.FC<FormProps> = ({ text, link }) => {
+const Form: React.FC<FormProps> = ({ text, link, url }) => {
   return (
     <div>
       <div className="flex flex-col gap-[15px]">
@@ -17,9 +19,9 @@ const Form: React.FC<FormProps> = ({ text, link }) => {
         <CtaButton label="Login to your account" />
         <p className="text-Text-Relevant text-center">
           {text}{" "}
-          <a href="" className="text-CTA-Default">
+          <Link href={url} className="text-CTA-Default hover:underline">
             {link}
-          </a>
+          </Link>
         </p>
         <Divider />
         <GoogleBtn />

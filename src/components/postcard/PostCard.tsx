@@ -24,7 +24,7 @@ const PostCard: React.FC<PostCardProps> = ({
   views
 }) => {
   return (
-    <div className="flex w-[600px] colum flex-col p-[30px] ease-out duration-150 rounded gap-[15px] border border-Background-Light bg-Background-Default hover:bg-[#0B111C]">
+    <div className="flex w-[600px] colum flex-col p-[30px] ease-out duration-150 rounded gap-[15px] border border-Background-Light bg-Background-Default">
       <p className="text-base text-Text-Default">{category} | {date} | {readtime} mins | {views} views</p>
       <a href={url}><h2 className="text-xl font-black text-Text-Relevant hover:underline">{title}</h2></a>
       <p className="text-base font-normal text-Text-Default">

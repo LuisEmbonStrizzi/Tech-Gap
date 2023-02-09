@@ -8,7 +8,7 @@ const page: React.FC<pageProps> = () => {
     <RootLayout isUserEntering={true}>
       <div className="h-screen flex flex-col justify-center items-center gap-[60px]">
         <h1 className="text-Text-Relevant font-black text-xxl">Sign up</h1>
-        <Form text="Have an account?" link="Log in" />
+        <Form text="Have an account?" link="Log in" url="/login"/>
       </div>
     </RootLayout>
   );
