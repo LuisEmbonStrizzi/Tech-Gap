@@ -2,10 +2,13 @@ import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 
-type NavButtonsProps = {};
+
+type NavButtonsProps = {
+};
 
 const NavButtons: React.FC<NavButtonsProps> = () => {
   const [active, setActive] = useState<boolean>(false);
+  const [inPost, setInPost] = useState<boolean>(true);
 
   const toggleActive = () => {
     setActive(!active);
@@ -14,7 +17,7 @@ const NavButtons: React.FC<NavButtonsProps> = () => {
   return (
     <nav className="w-1/4 h-[80px]">
       <ul className="h-full w-full flex items-center justify-center">
-        <li className="group overflow-hidden relative h-full w-1/3 flex items-center justify-center border border-l-Background-Light border-b-Background-Light border-r-Background-Default border-t-Background-Default text-Text-Relevant">
+        <li className={`group overflow-hidden relative h-full w-1/3 flex items-center justify-center border border-l-Background-Light border-b-Background-Light border-r-Background-Default border-t-Background-Default text-Text-Relevant`}>
           <Link
             href="/"
             className="w-full h-full text-center flex items-center justify-center"
@@ -56,7 +59,7 @@ const NavButtons: React.FC<NavButtonsProps> = () => {
               height="2.5"
               transform="translate(0 7.5)"
               fill={active ? "#010409" : "#EDEDED"}
-              className="ease-out duration-300 group-hover:w-[23px] group-hover:translate-x-[11px] group-hover:translate-y-[7.5px]"
+              className="ease-out duration-200 group-hover:w-[23px] group-hover:translate-x-[11px] group-hover:translate-y-[7.5px]"
             />
             <rect
               width="46"

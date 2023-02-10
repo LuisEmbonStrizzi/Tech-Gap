@@ -9,7 +9,7 @@ const Navbar: React.FC<NavbarProps> = () => {
   return (
     <>
       {" "}
-      <header className="pl-[32px] w-full h-[80px] flex items-center justify-between border border-b-Background-Light">
+      <header className="pl-[32px] w-full h-[80px] flex items-center justify-between border-b border-b-Background-Light">
         <Logo />
         <NavButtons />
       </header>
