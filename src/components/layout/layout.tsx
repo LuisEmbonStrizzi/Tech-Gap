@@ -1,8 +1,8 @@
-'use client';
+"use client";
 import "../../styles/Fonts/WEB/css/globals.css";
 import Head from "./head";
 import Navbar from "./navbar/Navbar";
-import Footer from "./Footer";
+import Footer from "./footer";
 import Logo from "../global/Logo";
 import Settings from "./navbar/Settings";
 
@@ -21,11 +21,9 @@ const RootLayout: React.FC<RootLayoutProps> = ({
       <body className="font-satoshi bg-Background-Default">
         {isUserEntering ? (
           <>
-            <div className="fixed top-[32px] left-[32px]">
-              <div className="flex flex-col gap-[30px] ">
-                <Logo />
-                <Settings />
-              </div>
+            <div className=" flex flex-col items-start gap-[30px] p-[32px] mb-[32px] ">
+              <Logo />
+              <Settings />
             </div>
             {children}
             <Footer />
