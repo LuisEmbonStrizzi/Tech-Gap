@@ -1,12 +1,29 @@
-import React from "react";
+"use client";
+
+import { auth } from "../../../firebase/client";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { useAuthState} from "react-firebase-hooks/auth"
+import { useEffect } from "react";
 
 type GoogleBtnProps = {};
 
 const GoogleBtn: React.FC<GoogleBtnProps> = () => {
+  const [user, setAuthUser] = useAuthState(auth);
+  const googleAuth = new GoogleAuthProvider();
+  const login = async () => {
+    const result = await signInWithPopup(auth, googleAuth);
+  };
+  useEffect(()=>{
+
+  },[user]);
+
+  
+
   return (
     <button
       type="button"
       className="text-[#767676] bg-[#fff] rounded text-base px-[42.5px] py-[16px] text-center flex items-center gap-[15px] font-normal border border-[#767676] "
+      onClick={login}
     >
       <svg
         width="24"
