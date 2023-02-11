@@ -6,7 +6,7 @@ type InputProps = {
 
 const Input: React.FC<InputProps> = ({ placeholder }) => {
   return (
-    <div className="flex flex-col gap-[10px] w-full">
+    <div className="flex flex-col gap-[10px]">
       <label htmlFor="Email" className="text-Text-Relevant">
         {" "}
         Email{" "}

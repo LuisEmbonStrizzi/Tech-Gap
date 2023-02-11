@@ -1,12 +1,10 @@
 import RootLayout from "@/components/layout/layout";
-import React from "react";
 import Form from "@/components/userform/Form";
-type pageProps = {};
 
-const page: React.FC<pageProps> = () => {
+const page: React.FC = () => {
   return (
     <RootLayout isUserEntering={true}>
-      <div className="flex flex-col justify-center items-center gap-[60px] pb-[128px] md:pb-0">
+      <div className="flex h-screen flex-col justify-center items-center gap-[60px]">
         <h1 className="text-Text-Relevant font-black text-mdxxl md:text-xxl">
           Log In
         </h1>

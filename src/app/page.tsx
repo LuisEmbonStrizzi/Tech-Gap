@@ -7,7 +7,7 @@ export default function Home() {
     <RootLayout isUserEntering={false}>
       <Alert label="Alerta por error random!" />
       <div className="w-full flex justify-center">
-        <div className="w-[90%] flex flex-col gap-[30px] md:w-[65%] xl:w-[50%] 2xl:w-[35%] mt-[60px] mb-[60px]">
+        <div className="w-[90%] flex flex-col gap-[30px] md:w-[65%] xl:w-[50%] 2xl:w-[35%] mt-[60px] mb-[140px]">
           <PostCard
             url="/desing/ux-ui/epic-title-for-amazing-post"
             title="Epic title for amazing post"

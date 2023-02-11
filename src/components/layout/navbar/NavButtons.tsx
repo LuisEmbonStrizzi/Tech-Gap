@@ -15,9 +15,9 @@ const NavButtons: React.FC<NavButtonsProps> = () => {
   };
 
   return (
-    <nav className="w-1/4 h-[80px]">
+    <nav className="h-[80px]">
       <ul className="h-full w-full flex items-center justify-center">
-        <li className={`group overflow-hidden relative h-full w-1/3 flex items-center justify-center border border-l-Background-Light border-b-Background-Light border-r-Background-Default border-t-Background-Default text-Text-Relevant`}>
+        <li className={`group overflow-hidden relative h-full w-[170px] flex items-center justify-center border border-l-Background-Light border-b-Background-Light border-r-Background-Default border-t-Background-Default text-Text-Relevant`}>
           <Link
             href="/"
             className="w-full h-full text-center flex items-center justify-center"
@@ -26,7 +26,7 @@ const NavButtons: React.FC<NavButtonsProps> = () => {
           </Link>
           <span className=" w-full h-[1px] absolute bottom-[0px] bg-Text-Relevant ease-in duration-150 opacity-0 group-hover:opacity-100"></span>
         </li>
-        <li className="group overflow-hidden relative h-full w-1/3 flex items-center justify-center border border-l-Background-Light border-b-Background-Light border-r-Background-Default border-t-Background-Default text-Text-Relevant">
+        <li className="group overflow-hidden relative h-full w-[170px] flex items-center justify-center border border-l-Background-Light border-b-Background-Light border-r-Background-Default border-t-Background-Default text-Text-Relevant">
           <Link
             href="/about"
             className="w-full h-full text-center flex items-center justify-center"
@@ -37,7 +37,8 @@ const NavButtons: React.FC<NavButtonsProps> = () => {
         </li>
         <li
           onClick={toggleActive}
-          className="group overflow-hidden cursor-pointer relative h-full w-1/3 flex items-center justify-center border border-l-Background-Light border-b-Background-Light border-r-Background-Default border-t-Background-Default text-Text-Relevant"
+          title="Settings"
+          className="group overflow-hidden cursor-pointer relative h-full w-[170px] flex items-center justify-center border border-l-Background-Light border-b-Background-Light border-r-Background-Default border-t-Background-Default text-Text-Relevant"
         >
           <svg
             width="46"

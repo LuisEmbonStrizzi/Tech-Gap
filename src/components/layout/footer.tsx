@@ -5,7 +5,7 @@ type FooterProps = {};
 const Footer: React.FC<FooterProps> = () => {
   return (
     //El target blank es para abrirlo en otra pestaña en lugar de salir de la página
-    <div className="text-Extras text-base font-normal select-none fixed bottom-0 md:flex md:justify-end p-[32px] w-full [32px] flex justify-center bg-Background-Default border-t-[1px]">
+    <div className="text-Extras text-base font-normal select-none fixed bottom-0 h-[80px] w-full flex items-center justify-center bg-Background-Default border-t-[1px] border-Background-Light">
       <div className="">
         <a
           href="#"

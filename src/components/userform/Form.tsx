@@ -13,19 +13,17 @@ type FormProps = {
 
 const Form: React.FC<FormProps> = ({ text, link, url }) => {
   return (
-    <div>
-      <div className="flex flex-col gap-[15px]">
-        <Input placeholder="Enter your email" />
-        <CtaButton label="Login to your account" />
-        <p className="text-Text-Relevant text-center">
-          {text}{" "}
-          <Link href={url} className="text-CTA-Default hover:underline">
-            {link}
-          </Link>
-        </p>
-        <Divider />
-        <GoogleBtn />
-      </div>
+    <div className="flex flex-col gap-[15px] mx-[30px]">
+      <Input placeholder="Enter your email" />
+      <CtaButton label="Login to your account" />
+      <p className="text-Text-Relevant text-center">
+        {text}{" "}
+        <Link href={url} className="text-CTA-Default hover:underline">
+          {link}
+        </Link>
+      </p>
+      <Divider />
+      <GoogleBtn />
     </div>
   );
 };
