@@ -1,6 +1,6 @@
 import React from "react";
 import RootLayout from "@/components/layout/layout";
-import Aside from "@/components/Aside/Aside";
+import Aside from "@/components/aside/Aside";
 
 type pageProps = {};
 

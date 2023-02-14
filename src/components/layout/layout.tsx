@@ -18,12 +18,13 @@ const RootLayout: React.FC<RootLayoutProps> = ({
   return (
     <html lang="en">
       <Head />
-      <body className="font-satoshi bg-Background-Default">
+      <body className="font-satoshi bg-Background-Default selection:text-Text-Relevant selection:bg-CTA-Default">
         {isUserEntering ? (
           <>
-            <div className="fixed w-full h-[80px] flex items-center pl-[32px] ">
+            <header className="fixed top-0 h-[80px] lg:h-auto w-full px-[32px] lg:pt-[32px] flex lg:flex-col lg:gap-[30px] justify-between items-center lg:items-start border-b lg:border-none border-b-Background-Light">
               <Logo />
-            </div>
+              <Settings/>
+            </header>
             {children}
           </>
         ) : (

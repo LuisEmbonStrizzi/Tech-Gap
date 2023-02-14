@@ -7,7 +7,6 @@ type PostCardProps = {
   title: string;
   author: string;
   authorcontact: string;
-  category: string;
   date: string;
   readtime: number;
   views: number;
@@ -19,7 +18,6 @@ const PostCard: React.FC<PostCardProps> = ({
   title,
   author,
   authorcontact,
-  category,
   date,
   readtime,
   views,
@@ -28,13 +26,13 @@ const PostCard: React.FC<PostCardProps> = ({
   return (
     <div className="flex w-[100%] colum flex-col p-[30px] ease-out duration-150 rounded gap-[15px] border border-Background-Light bg-Background-Default">
       <p className="text-base text-Text-Default">
-        {category} | {date} | {readtime} mins | {views} views
+        {date} | {readtime} mins | {views} views
       </p>
-      <a href={url}>
+      <Link href={url}>
         <h2 className="text-xl font-black text-Text-Relevant hover:underline">
           {title}
         </h2>
-      </a>
+      </Link>
       <p className="text-base font-normal text-Text-Default">
         Written by{" "}
         <a

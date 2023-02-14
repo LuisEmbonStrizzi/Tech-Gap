@@ -1,10 +1,6 @@
 import React from "react";
 
-type InputProps = {
-  placeholder: string;
-};
-
-const Input: React.FC<InputProps> = ({ placeholder }) => {
+const Input: React.FC = () => {
   return (
     <div className="flex flex-col gap-[10px]">
       <label htmlFor="Email" className="text-Text-Relevant">
@@ -13,7 +9,9 @@ const Input: React.FC<InputProps> = ({ placeholder }) => {
       </label>
       <input
         className="ease-out duration-150 p-[15px] rounded bg-Background-Light border border-Background-Variations text-base font-normal text-Text-Relevant placeholder-Extras outline-none focus:border-CTA-Default"
-        placeholder={placeholder}
+        placeholder="Enter your email"
+        id="Email"
+        name="Email"
       ></input>
     </div>
   );
