@@ -1,6 +1,6 @@
 "use client";
 
-import { auth } from "../../../firebase/client";
+import { auth } from "../../firebase/client";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useAuthState} from "react-firebase-hooks/auth"
 import { useEffect } from "react";
