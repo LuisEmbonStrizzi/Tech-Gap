@@ -3,14 +3,14 @@ import { getAuth } from 'firebase/auth';
 //import { getDatabase } from 'firebase/database'
 
 const firebaseConfig = {
-    apiKey: process.env.NEXT_PUBLIC_APIKEY,
-    authDomain: process.env.NEXT_PUBLIC_AUTHDOMAIN,
-    databaseURL: process.env.NEXT_PUBLIC_DATABASEURL,
-    projectId: process.env.NEXT_PUBLIC_PROJECTID,
-    storageBucket: process.env.NEXT_PUBLIC_STORAGEBUCKET,
-    messagingSenderId: process.env.NEXT_PUBLIC_MESSAGINGSENDERID,
-    appId: process.env.NEXT_PUBLIC_APPID,
-    measurementId: process.env.NEXT_PUBLIC_MEASUREMENTID
+    apiKey: 'AIzaSyBWxXJSFnKjgbtmbfLk55tnZOrhUArsqN0',
+    authDomain: "tech-gap.firebaseapp.com",
+    databaseURL: "https://tech-gap-default-rtdb.firebaseio.com/",
+    projectId: "tech-gap",
+    storageBucket: "tech-gap.appspot.com",
+    messagingSenderId: "1049723104877",
+    appId: "1:1049723104877:web:ade9a35f2693bbc2e91964",
+    measurementId: "G-94SYW2PNTB"
   };
 
 // Base de datos
