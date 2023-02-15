@@ -5,7 +5,7 @@ import React from "react";
 const page: React.FC = () => {
   return (
     <RootLayout isUserEntering={false}>
-      <div className="full-w flex justify-center mt-[80px]">
+      <div className="full-w flex justify-center mt-[140px] lg:mt-[80px]">
         <div className="w-full lg:w-[60%] 2xl:w-[40%]">
           <div className="w-full px-[30px] py-[60px] border-b border-Background-Light lg:border-x">
             <h1 className="text-mdxxl lg:text-xxl text-Text-Relevant font-black text-center">
@@ -26,7 +26,7 @@ const page: React.FC = () => {
               The Tech-Gap team is always open to new ideas and suggestions.
             </p>
           </div>
-          <div className="w-full p-[30px] border-b border-Background-Light lg:border-x flex gap-[30px] flex-col mb-[80px] lg:mb-0">
+          <div className="w-full p-[30px] lg:border-b border-Background-Light lg:border-x flex gap-[30px] flex-col mb-[80px] lg:mb-0">
             <ContactForm />
           </div>
         </div>

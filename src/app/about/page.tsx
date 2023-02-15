@@ -44,7 +44,7 @@ const page: React.FC<pageProps> = () => {
   return (
     <RootLayout isUserEntering={false}>
       {/*{browserName === "Chrome" ? <BraveAlert /> : ""}*/}
-      <div className="full-w flex justify-center mt-[80px]">
+      <div className="full-w flex justify-center mt-[140px] lg:mt-[80px]">
         <div className="w-full lg:w-[60%] 2xl:w-[40%]">
           <div className="w-full px-[30px] py-[60px] border-b border-Background-Light lg:border-x">
             <h1 className="text-mdxxl lg:text-xxl text-Text-Relevant font-black text-center">
@@ -76,7 +76,7 @@ const page: React.FC<pageProps> = () => {
             role="Author"
             url="https://www.linkedin.com/in/luis-embon-strizzi-9a288624a/"
           />
-          <div className="w-full p-[30px] border-b border-Background-Light lg:border-x flex gap-[30px] flex-col mb-[80px] lg:mb-0">
+          <div className="w-full p-[30px] lg:border-b border-Background-Light lg:border-x flex gap-[30px] flex-col mb-[80px] lg:mb-0">
             <p className="font-normal text-Text-Relevant text-lg">
               Welcome to Tech-Gap, a website made by students and for students.
               Here, we aim to provide answers to your questions, offer advice,
