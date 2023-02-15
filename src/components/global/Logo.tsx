@@ -15,8 +15,8 @@ const Logo: React.FC<LogoProps> = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M3.97853 16H14.3971C15.2824 16 16 15.0449 16 13.8667V0L3.97853 16Z"
             fill="#EDEDED"
           />

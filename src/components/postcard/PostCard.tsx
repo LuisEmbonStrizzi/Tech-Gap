@@ -58,7 +58,7 @@ const PostCard: React.FC<PostCardProps> = ({
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_5_356)">
+              <g clipPath="url(#clip0_5_356)">
                 <path
                   d="M22 17V23.97L17 21.83L12 23.97V11H18V9H12C10.9 9 10 9.9 10 11V27L17 24L24 27V17H22ZM26 13H24V15H22V13H20V11H22V9H24V11H26V13Z"
                   fill="#2F3A4F"
