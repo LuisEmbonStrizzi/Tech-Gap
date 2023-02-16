@@ -1,35 +1,37 @@
 import RootLayout from "@/components/layout/layout";
 import Alert from "@/components/global/Alert";
 import PostCard from "@/components/postcard/PostCard";
+import getPostMetadata from "@/libs/getPostMetadata";
 
-export default function Home() {
+type Props = {};
+
+const page: React.FC = () => {
+  const postMetaData = getPostMetadata();
   return (
     <RootLayout isUserEntering={false}>
       <Alert label="Alerta por error random!" />
       <div className="w-full flex justify-center mt-[140px] lg:mt-[80px]">
-        <div className="w-[90%] flex flex-col gap-[30px] md:w-[65%] xl:w-[50%] 2xl:w-[35%] pt-[60px] pb-[140px]">
-          <PostCard
-            url="/desing/ux-ui/epic-title-for-amazing-post"
-            title="Epic title for amazing post"
-            author="Arotu"
-            authorcontact="https://www.linkedin.com/in/ariel-alzogaray-flores-666833246/"
-            date="08.02.2023"
-            readtime={2}
-            views={13}
-            likes={6}
-          />
-          <PostCard
-            url="/desing/ux-ui/epic-title-for-amazing-post"
-            title="Epic title for amazing post"
-            author="Arotu"
-            authorcontact="https://www.linkedin.com/in/ariel-alzogaray-flores-666833246/"
-            date="08.02.2023"
-            readtime={2}
-            views={13}
-            likes={6}
-          />
-        </div>
+        <>
+          <div className="w-[90%] flex flex-col gap-[30px] md:w-[65%] xl:w-[50%] 2xl:w-[35%] mt-[60px] mb-[140px]">
+            {postMetaData.map((post) => {
+              return (
+                <PostCard
+                  key={post.slug}
+                  url={`/${post.category}/${post.slug}`}
+                  title={post.title}
+                  author={post.author}
+                  authorcontact="https://www.linkedin.com/in/ariel-alzogaray-flores-666833246/"
+                  date={post.date}
+                  readtime={post.readtime}
+                  views={13}
+                  likes={6}
+                />
+              );
+            })}
+          </div>
+        </>
       </div>
     </RootLayout>
   );
-}
+};
+export default page;
