@@ -35,7 +35,7 @@ module.exports = {
       tl: "to top left",
     },
     fontFamily: {
-      satoshi: ["Satoshi", "sans-serif"],
+      sans: ['var(--font-satoshi)']
     },
     fontSize: {
       sm: ["14px", "19px"],

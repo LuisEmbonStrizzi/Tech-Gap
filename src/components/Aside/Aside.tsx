@@ -1,7 +1,8 @@
 import React from "react";
+import CloseIcon from "./CloseIcon";
 import CommentItem from "./CommentItem";
 import QuestionMark from "./QuestionMark";
-import CloseIcon from "./CloseIcon";
+
 type AsideProps = {};
 
 const Aside: React.FC<AsideProps> = () => {

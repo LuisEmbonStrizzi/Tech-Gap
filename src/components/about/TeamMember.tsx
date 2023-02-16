@@ -14,7 +14,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, role, url }) => {
         {name} | {role}
       </h2>
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <CtaButton label="Connect on Linkedin" icon={<></>} />
+        <CtaButton label="Connect on Linkedin" icon={<></>} btnType="button"/>
       </a>
     </div>
   );

@@ -1,11 +1,14 @@
 "use client";
-import "../../styles/Fonts/WEB/css/globals.css";
+import "../../styles/globals.css";
 import Head from "./head";
 import Navbar from "./navbar/Navbar";
 import Footer from "./footer";
 import Logo from "../global/Logo";
 import Settings from "./navbar/Settings";
-import { AuthContextProvider } from "../context/useAuthContext";
+import { AuthContextProvider } from "../../context/useAuthContext";
+import localFont from '@next/font/local'
+
+const satoshi = localFont({ src: '../../fonts/Satoshi-Variable.woff2', variable: '--font-satoshi'})
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -19,7 +22,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({
   return (
     <html lang="en">
       <Head />
-      <body className="font-satoshi bg-Background-Default selection:text-Text-Relevant selection:bg-CTA-Default">
+      <body className={`${satoshi.variable} font-sans bg-Background-Default selection:text-Text-Relevant selection:bg-CTA-Default`}>
         <AuthContextProvider>
           {isUserEntering ? (
             <>

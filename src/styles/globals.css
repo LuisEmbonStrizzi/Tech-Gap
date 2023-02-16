@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  sm: '480px',
+  md: '768px',
+  lg: '976px',
+  xl: '1440px',
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  scrollbar-color: green yellow;
+}
