@@ -6,7 +6,7 @@ type AsideProps = {};
 
 const Aside: React.FC<AsideProps> = () => {
   return (
-    <div className="flex fixed left-0 flex-col justify-between h-[calc(100vh_-_80px)] border-r divide-y divide-Background-Light border-Background-Light">
+    <div className="flex fixed left-0 top-[80px] flex-col justify-between h-[calc(100vh_-_80px)] border-r divide-y divide-Background-Light border-Background-Light">
       <div className="flex flex-col divide-y divide-Background-Light border-b border-Background-Light">
         <CommentItem />
         <QuestionMark />

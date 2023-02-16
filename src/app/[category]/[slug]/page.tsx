@@ -31,8 +31,8 @@ const page: React.FC<pageProps> = (props: any) => {
   return (
     <RootLayout isUserEntering={false}>
       <Aside />
-      <div>
-        <article className="prose lg:prose-xl">
+      <div className="flex flex-col items-center justify-center pt-[80px] ">
+        <article className="prose lg:prose-xl pt-[60px] ">
           <h1 className="text-Danger">{post.data.title} </h1>
           <Markdown>{post.content}</Markdown>
         </article>
