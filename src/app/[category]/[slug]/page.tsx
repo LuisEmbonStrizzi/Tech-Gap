@@ -43,6 +43,5 @@ const page: React.FC<pageProps> = (props: any) => {
 export default page;
 
 //Cosas que faltan agregar:
-//Lo de los tags/cotegorías(,)
 //Buildear el proyecto y ver bien lo de rutas estáticas
 //Funcionalidad de likes y visualizaciones

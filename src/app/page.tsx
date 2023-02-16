@@ -14,10 +14,11 @@ const page: React.FC = () => {
         <>
           <div className="w-[90%] flex flex-col gap-[30px] md:w-[65%] xl:w-[50%] 2xl:w-[35%] mt-[60px] mb-[140px]">
             {postMetaData.map((post) => {
+              const categories = post.category.toString().replaceAll(",", "-");
               return (
                 <PostCard
                   key={post.slug}
-                  url={`/${post.category}/${post.slug}`}
+                  url={`/${categories}/${post.slug}`}
                   title={post.title}
                   author={post.author}
                   authorcontact="https://www.linkedin.com/in/ariel-alzogaray-flores-666833246/"

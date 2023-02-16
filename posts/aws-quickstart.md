@@ -1,9 +1,9 @@
 ---
 title: "Getting Started with AWS"
-date: "2020-12-27"
+date: "2022-11-27"
 author: "Luiso"
 readtime: 2
-category: ["DEVOPS", "BACKEND"]
+category: ["DEVOPS", "BACKEND", "AROTU", "ALAN"]
 ---
 
 "Cloud computing" plays a vital role in the creation of software products and services. It's also one of the most highly sought-after skills in the tech industry.
