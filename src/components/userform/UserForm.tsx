@@ -52,7 +52,6 @@ const Form: React.FC<FormProps> = ({ text, link, url }) => {
       <Input changeProp={handleChange} />
       <CtaButton
         btnType="submit"
-        method={signin}
         label="Login to your account"
         icon={<></>}
       />
