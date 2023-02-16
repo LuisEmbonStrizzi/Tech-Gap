@@ -50,5 +50,6 @@ module.exports = {
   plugins: [
     require("tailwindcss-border-gradient-radius"),
     require("@tailwindcss/typography"),
+    require("tailwind-scrollbar"),
   ],
 };
