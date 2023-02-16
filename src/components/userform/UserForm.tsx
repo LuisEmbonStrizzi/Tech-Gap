@@ -22,7 +22,7 @@ const Form: React.FC<FormProps> = ({ text, link, url }) => {
   };
 
   const actionCodeSettings = {
-    url: "https://localhost:3000",
+    url: "http://localhost:3000",
     handleCodeInApp: true,
     iOS: {
       bundleId: "com.example.ios",

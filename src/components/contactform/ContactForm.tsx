@@ -15,9 +15,10 @@ const ContactForm: React.FC<ContactFormProps> = () => {
   };
   
   return (
-    <form className="flex flex-col gap-[15px]" action="https://formsubmit.co/alanyeger1@gmail.com" method="POST">
+    <form className="flex flex-col gap-[15px]" action="https://formsubmit.co/tech.gap.blog@gmail.com" method="POST">
       <input type="hidden" name="_captcha" value="false"></input>
       <input type="hidden" name="_next" value="http://localhost:3000/contact/"></input>
+      <input type="hidden" name="_template" value="box"></input>
       <Input changeProp={handleChange}/>
       <TextArea/>
       <CtaButton btnType="submit" label="Submit message" icon={<></>}/>
