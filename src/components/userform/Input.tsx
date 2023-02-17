@@ -12,7 +12,7 @@ const Input: React.FC<InputProps> = ({changeProp}) => {
       </label>
       <input
         onChange={changeProp}
-        className="ease-out duration-150 p-[15px] rounded bg-Background-Light border border-Background-Variations text-base font-normal text-Text-Relevant placeholder-Extras outline-none focus:border-CTA-Default"
+        className="ease-out duration-150 p-[15px] rounded bg-Background-Light border border-Background-Variations text-base font-normal text-Text-Relevant placeholder-Extras placeholder:font-medium outline-none focus:border-CTA-Default"
         placeholder="Enter your email"
         type={"email"}
         id="Email"

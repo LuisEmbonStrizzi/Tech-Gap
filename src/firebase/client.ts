@@ -3,7 +3,7 @@ import { getAuth } from 'firebase/auth';
 //import { getDatabase } from 'firebase/database'
 
 const firebaseConfig = {
-    apiKey: 'AIzaSyBWxXJSFnKjgbtmbfLk55tnZOrhUArsqN0',
+    apiKey: "AIzaSyBWxXJSFnKjgbtmbfLk55tnZOrhUArsqN0",
     authDomain: "tech-gap.firebaseapp.com",
     databaseURL: "https://tech-gap-default-rtdb.firebaseio.com/",
     projectId: "tech-gap",
