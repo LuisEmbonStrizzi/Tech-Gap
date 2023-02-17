@@ -22,6 +22,7 @@ body {
   scrollbar-color: green yellow;
 }
 
+/*
 ::-webkit-scrollbar{
   width: 25px;
 }
@@ -58,4 +59,4 @@ body {
   background-position: center 4px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7.3335 0.666667L4.00016 4L0.66683 0.666667L7.3335 0.666667Z' fill='%23EDEDED'/%3e%3c/svg%3e ");
 }
-
+*/

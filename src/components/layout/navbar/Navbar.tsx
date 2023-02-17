@@ -2,12 +2,17 @@ import React from "react";
 import Logo from "@/components/global/Logo";
 import NavButtons from "./NavButtons";
 import Settings from "./Settings";
-
-type NavbarProps = {};
+import { useState } from "react";
 
 //Falta las settings hay que tener conocimiento del valor del estado de Navbuttons acerca de settings y a partir de ahi saber. Un contexto sería apropiado.
 
-const Navbar: React.FC<NavbarProps> = () => {
+const Navbar: React.FC = () => {
+  const [settings, setSettings] = useState<boolean>(false);
+
+  const toggleSettings = () => {
+    setSettings(!settings);
+  };
+
   return (
     <>
       {" "}
@@ -15,10 +20,10 @@ const Navbar: React.FC<NavbarProps> = () => {
         <div className="ml-[32px]">
           <Logo />
         </div>
-        <div className="lg:hidden mr-[32px]">
+        <div className={`lg:fixed right-0 top-[80px] lg:mt-[30px] mr-[30px] ease-out duration-500 ${settings ? '' : 'lg:opacity-0 top-[95px]' }`}>
           <Settings />
         </div>
-        <NavButtons />
+        <NavButtons toggleMethod={toggleSettings} state={settings} />
       </header>
     </>
   );
