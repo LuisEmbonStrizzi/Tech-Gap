@@ -3,7 +3,7 @@ import UserForm from "@/components/userform/UserForm";
 
 const page: React.FC = () => {
   return (
-    <RootLayout isUserEntering={true}>
+    <RootLayout isUserEntering={true} path="Log In">
       <div className="flex h-screen flex-col justify-center items-center gap-[60px]">
         <h1 className="text-Text-Relevant font-black text-xxl ">
           Log In

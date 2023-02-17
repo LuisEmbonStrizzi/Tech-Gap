@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
         <div className="ml-[32px]">
           <Logo />
         </div>
-        <div className={`lg:fixed right-0 top-[80px] lg:mt-[30px] mr-[30px] ease-out duration-500 ${settings ? '' : 'lg:opacity-0 top-[95px]' }`}>
+        <div className={`lg:fixed right-0 top-[80px] lg:mt-[30px] mr-[30px] ease-out duration-500 ${settings ? '' : 'lg:opacity-0 lg:top-[95px] lg:select-none' }`}>
           <Settings />
         </div>
         <NavButtons toggleMethod={toggleSettings} state={settings} />

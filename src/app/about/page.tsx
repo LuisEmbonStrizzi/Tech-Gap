@@ -42,7 +42,7 @@ const page: React.FC<pageProps> = () => {
   }, []);
 
   return (
-    <RootLayout isUserEntering={false}>
+    <RootLayout isUserEntering={false} path='About'>
       {/*{browserName === "Chrome" ? <BraveAlert /> : ""}*/}
       <div className="full-w flex justify-center mt-[140px] lg:mt-[80px]">
         <div className="w-full lg:w-[60%] 2xl:w-[40%]">

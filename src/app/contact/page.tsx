@@ -4,7 +4,7 @@ import React from "react";
 
 const page: React.FC = () => {
   return (
-    <RootLayout isUserEntering={false}>
+    <RootLayout isUserEntering={false} path="Contact">
       <div className="full-w flex justify-center mt-[140px] lg:mt-[80px]">
         <div className="w-full lg:w-[60%] 2xl:w-[40%]">
           <div className="w-full px-[30px] py-[60px] border-b border-Background-Light lg:border-x">

@@ -8,6 +8,7 @@ interface PostMetadata {
   author: string;
   readtime: number;
   category: [];
+  authorContact: string;
 }
 
 const getPostMetadata = (): PostMetadata[] => {
@@ -26,6 +27,7 @@ const getPostMetadata = (): PostMetadata[] => {
       author: matterResult.data.author,
       readtime: matterResult.data.readtime,
       category: matterResult.data.category,
+      authorContact: matterResult.data.authorcontact
     };
   });
 

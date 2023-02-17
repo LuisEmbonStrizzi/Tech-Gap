@@ -27,9 +27,10 @@ const generateStaticParams = async () => {
 
 const page: React.FC<pageProps> = (props: any) => {
   const slug = props.params.slug;
+  const capitalizeSlug = slug.charAt(0).toUpperCase() + slug.slice(1);
   const post = getPostContent(slug);
   return (
-    <RootLayout isUserEntering={false}>
+    <RootLayout isUserEntering={false} path={capitalizeSlug}>
       <Aside />
       <div className="flex flex-col items-center justify-center pt-[80px] ">
         <article className="prose lg:prose-xl pt-[60px] ">
