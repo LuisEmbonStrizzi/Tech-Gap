@@ -5,6 +5,7 @@ import matter from "gray-matter";
 import getPostMetadata from "@/libs/getPostMetadata";
 import RootLayout from "@/components/layout/layout";
 import Aside from "@/components/Aside/Aside";
+import ViewCounter from "@/components/postcard/ViewCounter";
 
 type pageProps = {};
 
@@ -31,6 +32,9 @@ const page: React.FC<pageProps> = (props: any) => {
   const post = getPostContent(slug);
   return (
     <RootLayout isUserEntering={false} path={capitalizeSlug}>
+      <div className="hidden">
+        <ViewCounter slug={slug} blogPage={true} />
+      </div>
       <Aside />
       <div className="flex flex-col items-center justify-center pt-[80px] ">
         <article className="prose lg:prose-xl pt-[60px] ">

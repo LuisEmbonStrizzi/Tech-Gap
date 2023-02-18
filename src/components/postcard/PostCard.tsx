@@ -1,6 +1,8 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import Chip from "./Chip";
+import ViewCounter from "./ViewCounter";
 
 type PostCardProps = {
   url: string;
@@ -9,7 +11,7 @@ type PostCardProps = {
   authorcontact: string;
   date: string;
   readtime: number;
-  views: number;
+  views: string;
   likes: number;
 };
 
@@ -25,9 +27,12 @@ const PostCard: React.FC<PostCardProps> = ({
 }) => {
   return (
     <div className="flex w-[100%] colum flex-col p-[30px] ease-out duration-150 rounded gap-[15px] border border-Background-Light bg-Background-Default">
-      <p className="text-base text-Text-Default">
-        {date} | {readtime} mins | {views} views
-      </p>
+      <div className="text-base text-Text-Default">
+        {date} | {readtime} mins |{" "}
+        <div>
+          <ViewCounter slug={views} blogPage={false} />
+        </div>
+      </div>
       <Link href={url}>
         <h2 className="text-xl font-black text-Text-Relevant hover:underline">
           {title}

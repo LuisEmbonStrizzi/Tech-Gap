@@ -8,7 +8,7 @@ type Props = {};
 const page: React.FC = () => {
   const postMetaData = getPostMetadata();
   return (
-    <RootLayout isUserEntering={false} path='Home'>
+    <RootLayout isUserEntering={false} path="Home">
       <Alert label="Alerta por error random!" />
       <div className="w-full flex justify-center mt-[140px] lg:mt-[80px]">
         <>
@@ -24,7 +24,7 @@ const page: React.FC = () => {
                   authorcontact={post.authorContact}
                   date={post.date}
                   readtime={post.readtime}
-                  views={13}
+                  views={post.slug}
                   likes={6}
                 />
               );
