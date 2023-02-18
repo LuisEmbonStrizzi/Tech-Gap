@@ -15,15 +15,14 @@ const satoshi = localFont({
 type RootLayoutProps = {
   children: React.ReactNode;
   isUserEntering: boolean;
-  path : string;
+  path: string;
 };
 
 const RootLayout: React.FC<RootLayoutProps> = ({
   children,
   isUserEntering,
-  path
+  path,
 }) => {
-
   return (
     <html lang="en">
       <title>{`Tech-Gap | ${path}`}</title>
@@ -34,23 +33,18 @@ const RootLayout: React.FC<RootLayoutProps> = ({
       <body
         className={`${satoshi.variable} font-sans bg-Background-Default selection:text-Text-Relevant selection:bg-CTA-Default`}
       >
-        <AuthContextProvider>
-          {isUserEntering ? (
-            <>
-              <header className="fixed top-0 h-[80px] lg:h-auto w-full px-[32px] lg:pt-[32px] flex lg:flex-col lg:gap-[30px] justify-between items-center lg:items-start border-b lg:border-none border-b-Background-Light">
-                <Logo />
-                <Settings />
-              </header>
-              {children}
-            </>
-          ) : (
-            <>
-              <Navbar />
-              {children}
-              <Footer />
-            </>
-          )}
-        </AuthContextProvider>
+        {isUserEntering ? (
+          <header className="fixed top-0 h-[80px] lg:h-auto w-full px-[32px] lg:pt-[32px] flex lg:flex-col lg:gap-[30px] justify-between items-center lg:items-start border-b lg:border-none border-b-Background-Light">
+            <Logo />
+            <Settings />
+          </header>
+        ) : (
+          <div>
+            <Navbar />
+            <Footer />
+          </div>
+        )}
+        <AuthContextProvider>{children}</AuthContextProvider>
       </body>
     </html>
   );

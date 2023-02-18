@@ -25,13 +25,11 @@ const PostCard: React.FC<PostCardProps> = ({
   views,
   likes,
 }) => {
+
   return (
     <div className="flex w-[100%] colum flex-col p-[30px] ease-out duration-150 rounded gap-[15px] border border-Background-Light bg-Background-Default">
-      <div className="text-base text-Text-Default">
-        {date} | {readtime} mins |{" "}
-        <div>
-          <ViewCounter slug={views} blogPage={false} />
-        </div>
+      <div className="text-base text-Text-Default ">
+        {date} | {readtime} mins |{" "}<ViewCounter slug={views} blogPage={false} />
       </div>
       <Link href={url}>
         <h2 className="text-xl font-black text-Text-Relevant hover:underline">

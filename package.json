@@ -12,10 +12,12 @@
     "@next/font": "^13.1.6",
     "firebase-admin": "^11.5.0",
     "gray-matter": "^4.0.3",
+    "i18next": "^22.4.10",
     "markdown-to-jsx": "^7.1.9",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-i18next": "^12.1.5",
     "swr": "^2.0.3"
   },
   "devDependencies": {

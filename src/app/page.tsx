@@ -7,6 +7,7 @@ type Props = {};
 
 const page: React.FC = () => {
   const postMetaData = getPostMetadata();
+
   return (
     <RootLayout isUserEntering={false} path="Home">
       <Alert label="Alerta por error random!" />
