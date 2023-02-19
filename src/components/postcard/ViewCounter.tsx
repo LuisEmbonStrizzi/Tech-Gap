@@ -31,9 +31,7 @@ const ViewCounter: React.FC<ViewCounterProps> = ({
     }
   }, [slug]);
   return (
-    <div>
-      <p> {`${views > 0 ? views.toLocaleString() : "---"} views`} </p>
-    </div>
+    <span> {`${views > 0 ? views.toLocaleString() : "---"} views`} </span>
     //Guardar el anterior en cada una de las posts y guardarlo en el localStorage
   );
 };
